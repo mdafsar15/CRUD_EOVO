@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="EntityObjectVO"
+  Version="11.1.1.64.93"
+  InheritPersonalization="true"
+  SelectList="EntityObjectEO.EMP_EMAIL, 
+       EntityObjectEO.SALARY, 
+       EntityObjectEO.FROM_DATE, 
+       EntityObjectEO.TO_DATE"
+  FromList="EMPSAL EntityObjectEO"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <DesignTime>
+    <Attr Name="_codeGenFlag2" Value="VarAccess"/>
+  </DesignTime>
+  <EntityUsage
+    Name="EntityObjectEO"
+    Entity="model.EntityObjectEO"/>
+  <ViewAttribute
+    Name="EmpEmail"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="EmpEmail"
+    EntityUsage="EntityObjectEO"
+    AliasName="EMP_EMAIL"/>
+  <ViewAttribute
+    Name="Salary"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Salary"
+    EntityUsage="EntityObjectEO"
+    AliasName="SALARY"/>
+  <ViewAttribute
+    Name="FromDate"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="FromDate"
+    EntityUsage="EntityObjectEO"
+    AliasName="FROM_DATE"/>
+  <ViewAttribute
+    Name="ToDate"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="ToDate"
+    EntityUsage="EntityObjectEO"
+    AliasName="TO_DATE"/>
+</ViewObject>
